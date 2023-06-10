@@ -1,0 +1,39 @@
+@import '../../../../../styles/variables';
+
+main {
+  height: calc(100% - 80px);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 30px;
+
+  h1 {
+    font-size: 3.5vw;
+    font-weight: 400;
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+  }
+
+  .profiles {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .manage-profiles {
+    border: 1px solid $gray;
+    background: none;
+    color: $gray;
+    font-size: 1.2vw;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-top: 30px;
+    &:hover {
+      border: 1px solid $light-01;
+      color: $light-01;
+    }
+  }
+}

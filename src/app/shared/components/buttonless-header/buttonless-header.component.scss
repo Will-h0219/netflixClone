@@ -1,0 +1,20 @@
+@import '../../../../styles/variables';
+
+header {
+  height: 30px;
+  padding: 25px 60px;
+  .logo {
+    display: block;
+    height: 30px;
+    &::before {
+      content: "";
+      display: inline-block;
+      mask: url('../../../../assets/images/logo.svg');
+      -webkit-mask: url('../../../../assets/images/logo.svg');
+      mask-size: 111px;
+      width: 111px;
+      height: 30px;
+      background-color: $red;
+    }
+  }
+}

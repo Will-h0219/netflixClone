@@ -1,0 +1,21 @@
+<ng-container *ngIf="profile; else addProfile">
+  <div class="profile">
+    <a class="profile__link" [routerLink]="[ '' ]">
+      <img
+        class="profile__avatar"
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+        alt="avatar"
+      >
+      <span class="profile__name">Mi perfil</span>
+    </a>
+  </div>
+</ng-container>
+
+<ng-template #addProfile>
+  <div class="profile">
+    <button class="profile__add">
+      <div class="profile__add__icon"></div>
+      <span class="profile__name">Agregar perfil</span>
+    </button>
+  </div>
+</ng-template>

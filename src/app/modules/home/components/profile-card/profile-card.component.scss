@@ -1,0 +1,67 @@
+@import '../../../../../styles/variables';
+
+.profile {
+  max-width: 200px;
+  min-width: 84px;
+  width: 10vw;
+  text-align: center;
+  &__link {
+    text-decoration: none;
+  }
+  &__avatar {
+    width: 100%;
+    max-height: 200px;
+    min-height: 84px;
+    height: 10vw;
+    border-radius: 4px;
+  }
+  &__name {
+    color: $mid-gray;
+    font-size: 1.4vw;
+    display: block;
+    margin: 0.5em 0;
+  }
+  &__add{
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 0;
+    &__icon {
+      height: 10vw;
+      max-height: 200px;
+      min-height: 84px;
+      position: relative;
+      border-radius: 4px;
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        mask: url('../../../../../assets/icons/add.svg') no-repeat 50% 50%;
+        -webkit-mask: url('../../../../../assets/icons/add.svg') no-repeat 50% 50%;
+        background-color: $mid-gray;
+        width: 60%;
+        min-width: 84px;
+        max-width: 120px;
+        height: 60%;
+        min-height: 84px;
+        max-height: 120px;
+        mask-size: 100%;
+        top: 50%;
+        right: 50%;
+        transform: translateY(-50%) translateX(50%);
+      }
+    }
+  }
+  &:hover {
+    .profile__avatar {
+      outline: solid 4px $light-01;
+      outline-offset: -4px;
+    }
+    .profile__name {
+      color: $light-01;
+    }
+    .profile__add__icon {
+      background-color: $light-01;
+    }
+  }
+}
