@@ -1,0 +1,17 @@
+@import './variables';
+
+.btn {
+  padding: 17px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: $black;
+
+  &__white {
+    background: $light-01;
+    &:hover {
+      background-color: $light-02;
+    }
+  }
+}
