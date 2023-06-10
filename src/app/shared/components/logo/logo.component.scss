@@ -1,0 +1,29 @@
+@import '../../../../styles/variables';
+
+$logo-height: 30px;
+$logo-width: 111px;
+$bg-logo-height: 40px;
+$bg-logo-width: 148px;
+
+.logo {
+  display: block;
+  height: $logo-height;
+  &::before {
+    content: "";
+    display: inline-block;
+    mask: url('../../../../assets/images/logo.svg') no-repeat 50% 50%;
+    -webkit-mask: url('../../../../assets/images/logo.svg') no-repeat 50% 50%;
+    mask-size: $logo-width;
+    width: $logo-width;
+    height: $logo-height;
+    background-color: $red;
+  }
+  &.bg {
+    height: $bg-logo-height;
+    &::before {
+      mask-size: $bg-logo-width;
+      width: $bg-logo-width;
+      height: $bg-logo-height;
+    }
+  }
+}
