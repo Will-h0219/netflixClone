@@ -3,11 +3,9 @@
 main {
   height: calc(100% - 80px);
   overflow: hidden;
-  &::before {
-    content: "";
-    display: block;
-    height: 15%;
-  }
+  display: flex;
+  align-content: center;
+  justify-content: center;
   section {
     display: flex;
     flex-flow: column;
