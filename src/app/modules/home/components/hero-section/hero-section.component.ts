@@ -3,11 +3,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { validateEmail } from 'src/app/shared/custom-validators/email.validator';
 
 @Component({
-  selector: 'app-landing-get-started',
-  templateUrl: './landing-get-started.component.html',
-  styleUrls: ['./landing-get-started.component.scss']
+  selector: 'app-hero-section',
+  templateUrl: './hero-section.component.html',
+  styleUrls: ['./hero-section.component.scss']
 })
-export class LandingGetStartedComponent {
+export class HeroSectionComponent {
   getStartedForm: FormGroup = this.fb.group({
     email: ['', [Validators.required, validateEmail()]]
   });

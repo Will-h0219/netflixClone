@@ -8,7 +8,7 @@ import { ProfileSelectionComponent } from './components/profile-selection/profil
 import { SharedModule } from '../../shared/shared.module';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
-import { LandingGetStartedComponent } from './components/landing-get-started/landing-get-started.component';
+import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { LandingGetStartedComponent } from './components/landing-get-started/lan
     ProfileSelectionComponent,
     ProfileCardComponent,
     LandingPageComponent,
-    LandingGetStartedComponent,
+    HeroSectionComponent,
   ],
   imports: [
     CommonModule,
