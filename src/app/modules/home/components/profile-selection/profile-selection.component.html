@@ -1,16 +1,18 @@
 <app-buttonless-header></app-buttonless-header>
 <main>
-  <h1>¿Quién está viendo ahora?</h1>
+  <section [@zoom]="zoomIn ? 'zoomIn' : 'zoomOut'">
+    <h1>¿Quién está viendo ahora?</h1>
 
-  <!-- Profiles -->
-  <div class="profiles">
-    <app-profile-card></app-profile-card>
-    <app-profile-card [profile]="false"></app-profile-card>
-  </div>
+    <!-- Profiles -->
+    <div class="profiles">
+      <app-profile-card></app-profile-card>
+      <app-profile-card [profile]="false"></app-profile-card>
+    </div>
 
-  <button
-    class="manage-profiles"
-  >
-    Administrar perfiles
-  </button>
+    <button
+      class="manage-profiles"
+    >
+      Administrar perfiles
+    </button>
+  </section>
 </main>
