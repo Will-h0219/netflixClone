@@ -1,0 +1,11 @@
+<div class="form__group">
+  <input
+    [id]="inputContent.name"
+    [name]="inputContent.name"
+    [type]="inputContent.type || 'text'"
+    [placeholder]="inputContent.placeholder || ''"
+    class="form__field"
+    [ngClass]="hasError ? 'has-error' : ''"
+  >
+  <label class="form__label" for="email">{{ inputContent.label }}</label>
+</div>

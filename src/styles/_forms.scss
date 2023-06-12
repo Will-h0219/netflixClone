@@ -1,0 +1,70 @@
+@import './variables';
+
+.form__group {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.form__field {
+  // height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 16px 6px;
+  font-size: 1vw;
+  color: $light-01;
+  background-color: $light-04;
+  border: 1px solid $gray;
+  &::placeholder {
+    color: transparent;
+  }
+  &.has-error {
+    border: 1px solid $red;
+  }
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  color: $light-02;
+  font-size: 1vw;
+  cursor: text;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__group label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  display: block !important;
+  transition: 0.2s;
+  font-size: 12px;
+  color: $light-02;
+  top: 16px;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.form__field:focus ~ .form__label {
+  color: $light-02;
+  left: 16px;
+  top: 16px;
+  transform: translateY(-50%);
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+}
+
+.form__field__error {
+  position: absolute;
+  display: block;
+  color: $red;
+  bottom: -24px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

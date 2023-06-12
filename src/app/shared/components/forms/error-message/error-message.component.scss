@@ -1,0 +1,12 @@
+@import '../../../../../styles/variables';
+
+.wrapper {
+  margin-top: 6px;
+  .error {
+    display: flex;
+    align-items: center;
+    color: $red;
+    font-size: 12px;
+    gap: 4px;
+  }
+}

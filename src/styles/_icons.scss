@@ -1,0 +1,21 @@
+@import './variables';
+
+.icon {
+  &::after {
+    content: "";
+    display: inline-block;
+  }
+}
+
+.arrow-right-icon {
+  @extend .icon;
+  &::after {
+    background: $light-01;
+    mask: url('../assets/icons/arrow-right.svg') no-repeat 50% 50%;
+    -webkit-mask: url('../assets/icons/arrow-right.svg') no-repeat 50% 50%;
+    width: 16px;
+    height: 16px;
+    mask-size: 16px;
+    -webkit-mask-size: 16px;
+  }
+}

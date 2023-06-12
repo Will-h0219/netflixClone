@@ -7,6 +7,8 @@ import { ProfileSelectionComponent } from './components/profile-selection/profil
 import { SharedModule } from '../../shared/shared.module';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { LandingGetStartedComponent } from './components/landing-get-started/landing-get-started.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,9 +17,11 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
     ProfileSelectionComponent,
     ProfileCardComponent,
     LandingPageComponent,
+    LandingGetStartedComponent,
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     HomeRoutingModule,
     SharedModule
   ]

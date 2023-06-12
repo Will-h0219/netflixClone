@@ -6,6 +6,9 @@ import { RouterModule } from '@angular/router';
 import { ButtonlessHeaderComponent } from './components/buttonless-header/buttonless-header.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { LandingHeaderComponent } from './components/landing-header/landing-header.component';
+import InputComponent from './components/forms/input/input.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ErrorMessageComponent } from './components/forms/error-message/error-message.component';
 
 @NgModule({
   declarations: [
@@ -14,16 +17,21 @@ import { LandingHeaderComponent } from './components/landing-header/landing-head
     ButtonlessHeaderComponent,
     LogoComponent,
     LandingHeaderComponent,
+    InputComponent,
+    ErrorMessageComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   exports: [
     ButtonlessHeaderComponent,
     FooterComponent,
     HeaderComponent,
-    LandingHeaderComponent
+    LandingHeaderComponent,
+    InputComponent,
+    ErrorMessageComponent
   ]
 })
 export class SharedModule { }
