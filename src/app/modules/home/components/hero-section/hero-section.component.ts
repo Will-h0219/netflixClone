@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { validateEmail } from 'src/app/shared/custom-validators/email.validator';
+import { HeroSectionModule } from '../../interfaces/heroSection.interface';
 
 @Component({
   selector: 'app-hero-section',
@@ -8,20 +9,11 @@ import { validateEmail } from 'src/app/shared/custom-validators/email.validator'
   styleUrls: ['./hero-section.component.scss']
 })
 export class HeroSectionComponent {
+  @Input() module: HeroSectionModule = {};
+
   getStartedForm: FormGroup = this.fb.group({
     email: ['', [Validators.required, validateEmail()]]
   });
-
-  inputCta = {
-    name: 'email',
-    label: 'Email',
-    placeholder: 'Email'
-  }
-
-  errorMessages = {
-    required: 'El email es obligatorio.',
-    invalidEmail: 'Escribe una dirección de email válida.'
-  }
 
   constructor (private fb: FormBuilder) { }
 

@@ -1,9 +1,10 @@
 <main>
   <app-landing-header></app-landing-header>
 
-  <app-hero-section></app-hero-section>
+  <app-hero-section [module]="constants.heroSection"></app-hero-section>
 
-  <hr />
-
+  <ng-container *ngFor="let feature of constants.featuresAndBenefits">
+    <app-feature-section [module]="feature"></app-feature-section>
+  </ng-container>
 
 </main>

@@ -1,0 +1,38 @@
+@import '../../../../../styles/variables';
+
+.feature {
+  background: $black-01;
+  width: 100%;
+  padding: 4.5rem 0;
+  border-bottom: 8px solid $black-03;
+  &__wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 15vw;
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    width: 50%;
+    position: relative;
+  }
+  &__text {
+    h1 {
+      font-size: 2.5vw;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.3vw;
+    }
+  }
+
+  .text-first {
+    .feature__text { order: 1; }
+    .feature__image { order: 2; }
+  }
+
+  .image-first {
+    .feature__text { order: 2; }
+    .feature__image { order: 1; }
+  }
+}

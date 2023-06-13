@@ -7,9 +7,9 @@ const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'co-en', component: LandingPageComponent },
+      { path: 'co-ES', component: LandingPageComponent },
       { path: 'browse', component: HomeComponent },
-      { path: '', redirectTo: 'co-en', pathMatch: 'full' },
+      { path: '', redirectTo: 'co-ES', pathMatch: 'full' },
     ]
   }
 ];

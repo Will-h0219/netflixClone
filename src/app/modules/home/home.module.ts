@@ -9,6 +9,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
+import { FeatureSectionComponent } from './components/feature-section/feature-section.component';
+import { FeatureMediaComponent } from './components/feature-section/feature-media/feature-media.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
     ProfileCardComponent,
     LandingPageComponent,
     HeroSectionComponent,
+    FeatureSectionComponent,
+    FeatureMediaComponent,
   ],
   imports: [
     CommonModule,

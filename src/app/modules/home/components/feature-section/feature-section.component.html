@@ -1,0 +1,17 @@
+<section class="feature">
+  <div class="feature__wrapper" [ngClass]="module.textFirst ? 'text-first' : 'image-first'">
+    <div class="feature__item feature__text">
+      <h1>{{ module.content!.title }}</h1>
+      <p>{{ module.content!.description }}</p>
+    </div>
+
+    <div class="feature__item feature__image">
+      <app-feature-media
+        [moduleId]="module.id!"
+        [media]="module.content!.media"
+      ></app-feature-media>
+    </div>
+  </div>
+</section>
+
+

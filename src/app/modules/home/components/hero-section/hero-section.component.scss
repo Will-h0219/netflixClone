@@ -8,6 +8,7 @@
   height: 70vh;
   min-height: 700px;
   text-align: center;
+  border-bottom: 8px solid $black-03;
   &::before {
     content: "";
     display: block;

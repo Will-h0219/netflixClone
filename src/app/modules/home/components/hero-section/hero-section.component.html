@@ -1,9 +1,9 @@
 <section class="get-started">
-  <h1>Peliculas y series ilimitadas y mucho más.</h1>
+  <h1>{{ module.title }}</h1>
 
-  <p class="note note__bg">Disfruta donde quieras. Cancela cuando quieras.</p>
+  <p class="note note__bg">{{ module.subtitle }}</p>
 
-  <p class="note note__md">¿Quieres ver algo ya? Escribe tu correo para crear una suscripción a Netflix o reactivarla.</p>
+  <p class="note note__md">{{ module.description }}</p>
 
   <form class="row form" [formGroup]="getStartedForm" (ngSubmit)="getStarted()">
     <div class="form__input__wrapper">
@@ -11,7 +11,7 @@
         class="form__group"
         ngDefaultControl
         formControlName="email"
-        [inputContent]="inputCta"
+        [inputContent]="module.getStarted!.inputCta"
         [hasError]="showError()"
       ></app-input>
 
@@ -19,15 +19,16 @@
         *ngIf="showError()"
         class="error-msg"
         [control]="getStartedForm.controls['email']"
-        [errorMessages]="errorMessages"
+        [errorMessages]="module.getStarted!.inputErrors"
       ></app-error-message>
     </div>
 
     <button
+      [id]="module.getStarted!.getStartedCta.name"
       class="btn btn__red"
       type="submit"
     >
-      Comenzar
+      {{ module.getStarted!.getStartedCta.label }}
       <span class="arrow-right-icon"></span>
     </button>
   </form>

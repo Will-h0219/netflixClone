@@ -1,0 +1,71 @@
+@import '../../../../../../styles/variables';
+
+.media {
+  width: 100%;
+  position: relative;
+  &__cover {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  &__container {
+    position: absolute;
+    overflow: hidden;
+    &__content {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__download {
+    width: 68%;
+    height: 25%;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $black-01;
+    padding: 8px 12px;
+    outline: 2px solid $gray;
+    outline-offset: -2px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-sizing: border-box;
+    .preview {
+      height: 100%;
+      width: auto;
+    }
+    .title {
+      font-size: 1.4vw;
+    }
+    .status {
+      font-size: 1.2vw;
+      color: $blue;
+    }
+    .icon {
+      width: 17%;
+      height: auto;
+      margin-left: auto;
+    }
+  }
+
+  .on-top {
+    z-index: 100;
+  }
+
+  .tv-feature {
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+  }
+
+  .multi-device-feature {
+    width: 61%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
