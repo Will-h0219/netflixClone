@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'co', component: LandingPageComponent, data: { test: '01' } },
+      { path: 'co', component: LandingPageComponent },
       { path: 'co-EN', component: LandingPageComponent },
       { path: 'browse', component: HomeComponent },
       { path: '', redirectTo: 'co', pathMatch: 'full' },
