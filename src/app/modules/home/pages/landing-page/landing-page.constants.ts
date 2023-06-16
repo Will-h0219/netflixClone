@@ -67,7 +67,36 @@ export const LANDING_CONSTANTS_ES = {
       },
       textFirst: false
     }
-  ]
+  ],
+  faqSection: {
+    title: 'Preguntas Frecuentes',
+    faqList: [
+      {
+        question: '¿Qué es Netflix?',
+        answer: 'Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.<br><br>Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!'
+      },
+      {
+        question: '¿Cuánto cuesta Neflix?',
+        answer: 'Disfruta Netflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde $ 16.900 hasta $ 38.900 al mes. Sin costos adicionales ni contratos.'
+      },
+      {
+        question: '¿Dónde puedo ver Netflix?',
+        answer: 'Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.<br><br>Además, puedes descargar tus series favoritas con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.'
+      },
+      {
+        question: '¿Cómo cancelo?',
+        answer: 'Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.'
+      },
+      {
+        question: '¿Qué puedo ver en Netflix?',
+        answer: 'Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.'
+      },
+      {
+        question: '¿Es bueno Netflix para los niños?',
+        answer: 'La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio.<br><br>Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean.'
+      }
+    ]
+  }
 }
 
 export const LANDING_CONSTANTS_EN = {
@@ -135,5 +164,34 @@ export const LANDING_CONSTANTS_EN = {
       },
       textFirst: false
     }
-  ]
+  ],
+  faqSection: {
+    title: 'Frequently Asked Questions',
+    faqList: [
+      {
+        question: 'What is Netflix?',
+        answer: 'Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.<br><br>You can watch as much as you want, whenever you want without a single commercial - all for one low monthly price. There\'s always something new to discover and new TV shows and movies are added every week!'
+      },
+      {
+        question: 'How much does Netflix cost?',
+        answer: 'Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from COP16,900 to COP38,900 a month. No extra costs, no contracts.'
+      },
+      {
+        question: 'Where can I watch?',
+        answer: 'Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you\'re on the go and without an internet connection. Take Netflix with you anywhere.'
+      },
+      {
+        question: 'How do I cancel?',
+        answer: 'Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.'
+      },
+      {
+        question: 'What can I watch on Netflix?',
+        answer: 'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.'
+      },
+      {
+        question: 'Is Netflix good for kids?',
+        answer: 'The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.<br><br>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don\'t want kids to see.'
+      }
+    ]
+  }
 }

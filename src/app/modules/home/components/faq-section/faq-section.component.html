@@ -1,11 +1,10 @@
 <section class="faqs">
-  <h1>Preguntas frecuentes</h1>
+  <h1>{{ module.title }}</h1>
 
-  <!-- FAQS List -->
   <div class="faqs__list">
-
-    <app-faq-item></app-faq-item>
-    
+    <ng-container *ngFor="let faq of module.faqList">
+      <app-faq-item [faq]="faq"></app-faq-item>
+    </ng-container>
   </div>
   <!-- Get Started Form -->
 </section>

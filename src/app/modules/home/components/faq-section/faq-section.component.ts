@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { FaqSection } from '../../interfaces/faqSection.interface';
 
 @Component({
   selector: 'app-faq-section',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./faq-section.component.scss']
 })
 export class FaqSectionComponent {
-
+  @Input() module!: FaqSection;
 }

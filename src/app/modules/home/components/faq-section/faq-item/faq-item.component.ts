@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { trigger, state, style, animate, transition, AUTO_STYLE } from '@angular/animations';
+import { FaqItem } from '../../../interfaces/faqSection.interface';
 
 @Component({
   selector: 'app-faq-item',
@@ -16,11 +17,13 @@ import { trigger, state, style, animate, transition, AUTO_STYLE } from '@angular
         visibility: 'hidden'
       })),
       transition('open => close', animate('0.2s ease-out')),
-      transition('close => open', animate('0.2s ease-in'))
+      transition('close => open', animate('0.1s ease-in'))
     ])
   ]
 })
 export class FaqItemComponent {
+  @Input() faq!: FaqItem;
+
   collapsed: boolean = true;
 
   collapseToggle(): void {
