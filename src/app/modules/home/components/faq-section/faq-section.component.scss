@@ -1,0 +1,15 @@
+@import '../../../../../styles/variables';
+
+.faqs {
+  width: 100%;
+  background-color: $black_01;
+  text-align: center;
+  padding: 56px 0;
+  &__list {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+}

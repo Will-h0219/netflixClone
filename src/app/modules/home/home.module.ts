@@ -11,6 +11,8 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { FeatureSectionComponent } from './components/feature-section/feature-section.component';
 import { FeatureMediaComponent } from './components/feature-section/feature-media/feature-media.component';
+import { FaqSectionComponent } from './components/faq-section/faq-section.component';
+import { FaqItemComponent } from './components/faq-section/faq-item/faq-item.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { FeatureMediaComponent } from './components/feature-section/feature-medi
     HeroSectionComponent,
     FeatureSectionComponent,
     FeatureMediaComponent,
+    FaqSectionComponent,
+    FaqItemComponent,
   ],
   imports: [
     CommonModule,
