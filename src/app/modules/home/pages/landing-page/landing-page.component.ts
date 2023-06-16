@@ -9,13 +9,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
-  constants = { ...FEATURE_CONSTANTS, ...LANDING_CONSTANTS_ES };
+  constants: any;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
     // TODO: Settear de acuerdo al routing?
-    this.constants = this.router.url.includes('EN') ? { ...this.constants, ...LANDING_CONSTANTS_EN } : { ...this.constants, ...LANDING_CONSTANTS_ES };
+    this.constants = this.router.url.includes('EN') ? { ...FEATURE_CONSTANTS, ...LANDING_CONSTANTS_EN } : { ...FEATURE_CONSTANTS, ...LANDING_CONSTANTS_ES };
   }
 
 }

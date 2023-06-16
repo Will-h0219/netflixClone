@@ -9,7 +9,7 @@ import { HeroSectionModule } from '../../interfaces/heroSection.interface';
   styleUrls: ['./hero-section.component.scss']
 })
 export class HeroSectionComponent {
-  @Input() module: HeroSectionModule = {};
+  @Input() module!: HeroSectionModule;
 
   getStartedForm: FormGroup = this.fb.group({
     email: ['', [Validators.required, validateEmail()]]

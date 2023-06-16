@@ -8,7 +8,7 @@ import { FeatureSection } from '../../interfaces/featureSection.interface';
   styleUrls: ['./feature-section.component.scss']
 })
 export class FeatureSectionComponent {
-  @Input() module: FeatureSection = {};
+  @Input() module!: FeatureSection;
 
   constants = { ...FEATURE_CONSTANTS };
 }

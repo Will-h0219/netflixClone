@@ -1,7 +1,7 @@
 export interface FeatureSection {
-  id?: string;
-  content?: FeatureContent;
-  textFirst?: boolean;
+  id: string;
+  content: FeatureContent;
+  textFirst: boolean;
 }
 
 export interface FeatureContent {
