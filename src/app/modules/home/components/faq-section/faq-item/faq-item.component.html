@@ -1,7 +1,7 @@
 <div class="collapsible">
   <button class="collapsible__btn" (click)="collapseToggle()">
     ¿Qué es Netflix?
-    <span class="icon icon__plus"></span>
+    <span class="icon" [ngClass]="collapsed ? 'icon__plus' : 'icon__close'"></span>
   </button>
 
   <div class="collapsible__content" [@collapse]="collapsed ? 'close' : 'open'">

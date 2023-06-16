@@ -24,12 +24,20 @@
         position: absolute;
         right: .5vw;
         background-color: $light-01;
+      }
+      &__plus::after {
         mask: url('../../../../../../assets/icons/plus.svg') no-repeat 50% 50%;
         -webkit-mask: url('../../../../../../assets/icons/plus.svg') no-repeat 50% 50%;
         height: 2vw;
         width: 2vw;
         mask-size: 2vw;
         -webkit-mask-size: 2vw;
+      }
+      &__close {
+        @extend .icon__plus;
+        &::after {
+          transform: rotate(45deg);
+        }
       }
     }
   }
@@ -40,6 +48,7 @@
     overflow: hidden;
     .content {
       padding: 1.3vw 2vw;
+      font-size: 1.5vw;
     }
   }
 }
