@@ -6,10 +6,10 @@ export const LANDING_CONSTANTS_ES = {
   heroSection: {
     title: 'Peliculas y series ilimitadas y mucho más.',
     subtitle: 'Disfruta donde quieras. Cancela cuando quieras.',
-    description: '¿Quieres ver algo ya? Escribe tu correo para crear una suscripción a Netflix o reactivarla.',
     getStarted: {
+      description: '¿Quieres ver algo ya? Escribe tu correo para crear una suscripción a Netflix o reactivarla.',
       inputCta: {
-        name: 'email',
+        name: 'heroSection_email',
         label: 'Email',
         placeholder: 'Email'
       },
@@ -95,7 +95,23 @@ export const LANDING_CONSTANTS_ES = {
         question: '¿Es bueno Netflix para los niños?',
         answer: 'La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio.<br><br>Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean.'
       }
-    ]
+    ],
+    getStarted: {
+      description: '¿Quieres ver algo ya? Escribe tu correo para crear una suscripción a Netflix o reactivarla.',
+      inputCta: {
+        name: 'faqSection_email',
+        label: 'Email',
+        placeholder: 'Email'
+      },
+      inputErrors: {
+        required: 'El email es obligatorio.',
+        invalidEmail: 'Escribe una dirección de email válida.'
+      },
+      getStartedCta: {
+        label: 'Comenzar',
+        name: 'getStarted'
+      }
+    }
   }
 }
 
@@ -103,10 +119,10 @@ export const LANDING_CONSTANTS_EN = {
   heroSection: {
     title: 'Unlimited movies, TV shows, and more',
     subtitle: 'Watch enywhere. Cancel anytime.',
-    description: 'Ready to watch? Enter your email to create or restart your membership.',
     getStarted: {
+      description: 'Ready to watch? Enter your email to create or restart your membership.',
       inputCta: {
-        name: 'email',
+        name: 'heroSection_email',
         label: 'Email address',
         placeholder: 'Email address'
       },
@@ -192,6 +208,22 @@ export const LANDING_CONSTANTS_EN = {
         question: 'Is Netflix good for kids?',
         answer: 'The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.<br><br>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don\'t want kids to see.'
       }
-    ]
+    ],
+    getStarted: {
+      description: 'Ready to watch? Enter your email to create or restart your membership.',
+      inputCta: {
+        name: 'faqSection_email',
+        label: 'Email address',
+        placeholder: 'Email address'
+      },
+      inputErrors: {
+        required: 'Email is required!',
+        invalidEmail: 'Please enter a valid email address'
+      },
+      getStartedCta: {
+        label: 'Get Started',
+        name: 'getStarted'
+      }
+    }
   }
 }

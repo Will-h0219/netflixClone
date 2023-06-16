@@ -13,6 +13,7 @@ import { FeatureSectionComponent } from './components/feature-section/feature-se
 import { FeatureMediaComponent } from './components/feature-section/feature-media/feature-media.component';
 import { FaqSectionComponent } from './components/faq-section/faq-section.component';
 import { FaqItemComponent } from './components/faq-section/faq-item/faq-item.component';
+import { GetStartedComponent } from './components/forms/get-started/get-started.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { FaqItemComponent } from './components/faq-section/faq-item/faq-item.com
     FeatureMediaComponent,
     FaqSectionComponent,
     FaqItemComponent,
+    GetStartedComponent,
   ],
   imports: [
     CommonModule,

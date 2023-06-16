@@ -1,0 +1,23 @@
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form__group {
+  width: 25vw;
+}
+
+.form__input__wrapper {
+  position: relative;
+  .error-msg {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.description {
+  font-size: 19px;
+  margin-bottom: 2rem;
+}

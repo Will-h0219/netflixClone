@@ -3,14 +3,16 @@
 .faqs {
   width: 100%;
   background-color: $black_01;
-  text-align: center;
   padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
   &__list {
     max-width: 70%;
     margin: 0 auto;
   }
   h1 {
-    margin-bottom: 2rem;
     font-size: 48px;
   }
 }

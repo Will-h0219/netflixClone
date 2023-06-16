@@ -3,33 +3,5 @@
 
   <p class="note note__bg">{{ module.subtitle }}</p>
 
-  <p class="note note__md">{{ module.description }}</p>
-
-  <form class="row form" [formGroup]="getStartedForm" (ngSubmit)="getStarted()">
-    <div class="form__input__wrapper">
-      <app-input
-        class="form__group"
-        ngDefaultControl
-        formControlName="email"
-        [inputContent]="module.getStarted!.inputCta"
-        [hasError]="showError()"
-      ></app-input>
-
-      <app-error-message
-        *ngIf="showError()"
-        class="error-msg"
-        [control]="getStartedForm.controls['email']"
-        [errorMessages]="module.getStarted!.inputErrors"
-      ></app-error-message>
-    </div>
-
-    <button
-      [id]="module.getStarted!.getStartedCta.name"
-      class="btn btn__red"
-      type="submit"
-    >
-      {{ module.getStarted!.getStartedCta.label }}
-      <span class="arrow-right-icon"></span>
-    </button>
-  </form>
+  <app-get-started-form [getStartedContent]="module.getStarted!"></app-get-started-form>
 </section>

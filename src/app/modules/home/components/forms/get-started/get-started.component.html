@@ -1,0 +1,29 @@
+<p *ngIf="getStartedContent.description" class="description">{{ getStartedContent.description }}</p>
+
+<form class="row form" [formGroup]="getStartedForm" (ngSubmit)="getStarted()">
+  <div class="form__input__wrapper">
+    <app-input
+      class="form__group"
+      ngDefaultControl
+      formControlName="email"
+      [inputContent]="getStartedContent.inputCta"
+      [hasError]="showError()"
+    ></app-input>
+
+    <app-error-message
+      *ngIf="showError()"
+      class="error-msg"
+      [control]="getStartedForm.controls['email']"
+      [errorMessages]="getStartedContent.inputErrors"
+    ></app-error-message>
+  </div>
+
+  <button
+    [id]="getStartedContent.getStartedCta.name"
+    class="btn btn__red"
+    type="submit"
+  >
+    {{ getStartedContent.getStartedCta.label }}
+    <span class="arrow-right-icon"></span>
+  </button>
+</form>
