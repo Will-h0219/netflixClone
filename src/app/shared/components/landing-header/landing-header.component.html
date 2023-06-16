@@ -6,7 +6,7 @@
       <div class="lang">
         <button class="btn btn__small btn__outline" (click)="toggleLangs()">
           <span class="lang__icon"></span>
-          {{ selectedLang }}
+          {{ selectedLang.label }}
           <span class="lang__select_icon"></span>
         </button>
         <ul class="lang__list" *ngIf="showLangOpts">
@@ -14,12 +14,12 @@
             class="lang__opts"
             (click)="setLang(lang)"
           >
-            {{ lang }}
+            {{ lang.label }}
           </li>
         </ul>
       </div>
 
-      <button class="btn btn__small btn__red">Iniciar sesión</button>
+      <button class="btn btn__small btn__red">{{ signIn }}</button>
     </div>
   </div>
 </header>
