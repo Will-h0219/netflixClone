@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Renderer2 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { validateEmail } from '../../../../../shared/custom-validators/email.validator';
 import { GetStarted } from '../../../interfaces/heroSection.interface';
@@ -15,13 +15,18 @@ export class GetStartedComponent {
     email: ['', [Validators.required, validateEmail()]]
   });
 
-  constructor (private fb: FormBuilder) { }
+  constructor (private fb: FormBuilder,
+    private renderer: Renderer2) { }
 
   showError() {
     return !this.getStartedForm.controls['email'].valid && this.getStartedForm.controls['email'].dirty;
   }
 
   getStarted() {
+    if (this.getStartedForm.invalid) {
+      this.renderer.selectRootElement(`#${this.getStartedContent.inputCta.name}`).focus();
+      return;
+    }
     console.log(this.getStartedForm.value);
   }
 }
