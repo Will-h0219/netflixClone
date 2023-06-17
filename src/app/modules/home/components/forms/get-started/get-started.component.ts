@@ -2,6 +2,7 @@ import { Component, Input, Renderer2 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { validateEmail } from '../../../../../shared/custom-validators/email.validator';
 import { GetStarted } from '../../../interfaces/heroSection.interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-get-started-form',
@@ -16,6 +17,7 @@ export class GetStartedComponent {
   });
 
   constructor (private fb: FormBuilder,
+    private router: Router,
     private renderer: Renderer2) { }
 
   showError() {
@@ -28,5 +30,6 @@ export class GetStartedComponent {
       return;
     }
     console.log(this.getStartedForm.value);
+    this.router.navigateByUrl('/browse', { state: { email: this.getStartedForm.controls['email'].value } })
   }
 }
