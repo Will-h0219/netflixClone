@@ -1,0 +1,31 @@
+@import '../../../../styles/variables';
+
+.footer {
+  width: 100%;
+  background-color: $black-01;
+  &__content {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 5vw 0;
+    &__links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 15px;
+      margin-bottom: 34px;
+      font-size: 14px;
+    }
+    .note {
+      color: $light-02;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    &__mark {
+      color: $light-02;
+      font-size: 13px;
+      margin-top: 24px;
+    }
+    a {
+      color: $light-02;
+    }
+  }
+}

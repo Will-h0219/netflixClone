@@ -3,21 +3,7 @@
     <app-logo size="bg"></app-logo>
 
     <div class="header__btns">
-      <div class="lang">
-        <button class="btn btn__small btn__outline" (click)="toggleLangs()">
-          <span class="lang__icon"></span>
-          {{ selectedLang.label }}
-          <span class="lang__select_icon"></span>
-        </button>
-        <ul class="lang__list" *ngIf="showLangOpts">
-          <li *ngFor="let lang of languages"
-            class="lang__opts"
-            (click)="setLang(lang)"
-          >
-            {{ lang.label }}
-          </li>
-        </ul>
-      </div>
+      <app-lang-selector [languages]="languages"></app-lang-selector>
 
       <button class="btn btn__small btn__red">{{ signIn }}</button>
     </div>

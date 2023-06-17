@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { LangOpt } from '../../interfaces/langOption.interface';
+import { FooterSection } from '../../interfaces/footer.interface';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-
+  @Input() languages: LangOpt[] = [];
+  @Input() module!: FooterSection;
 }

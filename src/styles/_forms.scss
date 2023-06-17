@@ -13,7 +13,7 @@
   border: none;
   border-radius: 4px;
   padding: 16px 16px 6px;
-  font-size: 1vw;
+  font-size: 16px;
   color: $light-01;
   background-color: $light-04;
   border: 1px solid $gray;
@@ -27,7 +27,7 @@
 
 .form__field:placeholder-shown ~ .form__label {
   color: $light-02;
-  font-size: 1vw;
+  font-size: 16px;
   cursor: text;
   position: absolute;
   left: 16px;
@@ -42,7 +42,7 @@
   transition: 0.2s;
   font-size: 12px;
   color: $light-02;
-  top: 16px;
+  top: 14px;
   left: 16px;
   transform: translateY(-50%);
 }
@@ -50,7 +50,7 @@
 .form__field:focus ~ .form__label {
   color: $light-02;
   left: 16px;
-  top: 16px;
+  top: 14px;
   transform: translateY(-50%);
 }
 

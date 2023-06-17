@@ -9,6 +9,7 @@ import { LandingHeaderComponent } from './components/landing-header/landing-head
 import InputComponent from './components/forms/input/input.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorMessageComponent } from './components/forms/error-message/error-message.component';
+import { LangSelectorComponent } from './components/lang-selector/lang-selector.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ErrorMessageComponent } from './components/forms/error-message/error-me
     LandingHeaderComponent,
     InputComponent,
     ErrorMessageComponent,
+    LangSelectorComponent,
   ],
   imports: [
     CommonModule,
@@ -31,6 +33,7 @@ import { ErrorMessageComponent } from './components/forms/error-message/error-me
     HeaderComponent,
     LandingHeaderComponent,
     InputComponent,
+    LangSelectorComponent,
     ErrorMessageComponent
   ]
 })

@@ -112,6 +112,29 @@ export const LANDING_CONSTANTS_ES = {
         name: 'getStarted'
       }
     }
+  },
+  footerSection: {
+    questions: '¿Preguntas? Llama al ',
+    phoneNumber: { label: '01 800 917 1564', path: 'https://youtu.be/dQw4w9WgXcQ' },
+    links: [
+      { label: 'Preguntas frecuentes', path: '/' },
+      { label: 'Centro de ayuda', path: '/' },
+      { label: 'Cuenta', path: '/' },
+      { label: 'Prensa', path: '/' },
+      { label: 'Relaciones con inversionistas', path: '/' },
+      { label: 'Empleo', path: '/' },
+      { label: 'Canjear tarjetas de regalo', path: '/' },
+      { label: 'Comprar tarjetas de regalo', path: '/' },
+      { label: 'Formas de ver', path: '/' },
+      { label: 'Términos de uso', path: '/' },
+      { label: 'Privacidad', path: '/' },
+      { label: 'Preferencias de cookies', path: '/' },
+      { label: 'Información corporativa', path: '/' },
+      { label: 'Contáctanos', path: '/' },
+      { label: 'Prueba de velocidad', path: '/' },
+      { label: 'Avisos legales', path: '/' },
+      { label: 'Solo en Netflix', path: '/' },
+    ]
   }
 }
 
@@ -225,5 +248,28 @@ export const LANDING_CONSTANTS_EN = {
         name: 'getStarted'
       }
     }
+  },
+  footerSection: {
+    questions: 'Questions? ',
+    phoneNumber: { label: '01 800 917 1564', path: 'https://youtu.be/dQw4w9WgXcQ' },
+    links: [
+      { label: 'FAQ', path: '/' },
+      { label: 'Help center', path: '/' },
+      { label: 'Account', path: '/' },
+      { label: 'Media center', path: '/' },
+      { label: 'Investor relations', path: '/' },
+      { label: 'Jobs', path: '/' },
+      { label: 'Redeem gift cards', path: '/' },
+      { label: 'Buy gift cards', path: '/' },
+      { label: 'Ways to watch', path: '/' },
+      { label: 'Terms of use', path: '/' },
+      { label: 'Privacy', path: '/' },
+      { label: 'Cookie preferences', path: '/' },
+      { label: 'Corporate information', path: '/' },
+      { label: 'Contact us', path: '/' },
+      { label: 'Speed test', path: '/' },
+      { label: 'Legal notices', path: '/' },
+      { label: 'Only on Netflix', path: '/' },
+    ]
   }
 }

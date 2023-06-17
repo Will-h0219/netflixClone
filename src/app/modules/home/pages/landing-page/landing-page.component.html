@@ -1,5 +1,5 @@
 <main>
-  <app-landing-header></app-landing-header>
+  <app-landing-header [languages]="constants.languages"></app-landing-header>
 
   <app-hero-section [module]="constants.heroSection"></app-hero-section>
 
@@ -8,4 +8,6 @@
   </ng-container>
 
   <app-faq-section [module]="constants.faqSection"></app-faq-section>
+
+  <app-footer [module]="constants.footerSection" [languages]="constants.languages"></app-footer>
 </main>

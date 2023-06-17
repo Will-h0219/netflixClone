@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  border-bottom: 8px solid $black-03;
   &__list {
     max-width: 70%;
     margin: 0 auto;
