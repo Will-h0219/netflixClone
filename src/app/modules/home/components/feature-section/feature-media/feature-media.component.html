@@ -21,7 +21,7 @@
 
     <ng-container *ngIf="media.mediaIcon && moduleId === constants.features.downloadFeature">
       <div class="media__download">
-        <img class="preview" src="../../../../../../assets/images/boxshot.svg" alt="boxshot">
+        <img class="preview" [src]="media.boxshot" alt="boxshot">
 
         <div>
           <p class="title">{{ media.title }}</p>

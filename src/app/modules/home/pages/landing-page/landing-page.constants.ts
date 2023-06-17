@@ -43,6 +43,7 @@ export const LANDING_CONSTANTS_ES = {
         description: 'Guarda tu contenido favorito y tendrás siempre algo para ver.',
         media: {
           cover: 'https://i.imgur.com/nicC5nh.png',
+          boxshot: 'https://i.imgur.com/7myEgdh.png',
           mediaIcon: 'https://i.imgur.com/0VC2xJL.gif',
           title: 'Stranger Things',
           status: 'Descargando...'
@@ -185,6 +186,7 @@ export const LANDING_CONSTANTS_EN = {
         description: 'Save your favorites easily and always have something to watch.',
         media: {
           cover: 'https://i.imgur.com/nicC5nh.png',
+          boxshot: 'https://i.imgur.com/7myEgdh.png',
           mediaIcon: 'https://i.imgur.com/0VC2xJL.gif',
           title: 'Stranger Things',
           status: 'Downloading...'
