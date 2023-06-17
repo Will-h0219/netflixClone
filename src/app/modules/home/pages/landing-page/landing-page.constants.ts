@@ -30,6 +30,7 @@ export const LANDING_CONSTANTS_ES = {
         title: 'Disfruta en tu TV',
         description: 'Ve en smart TV, Playstation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.',
         media: {
+          cover: 'https://i.imgur.com/k6uvvKS.png',
           mediaUrl: 'https://i.imgur.com/eUyUumw.gif'
         }
       },
@@ -41,6 +42,7 @@ export const LANDING_CONSTANTS_ES = {
         title: 'Descarga tus series para verlas offline',
         description: 'Guarda tu contenido favorito y tendrás siempre algo para ver.',
         media: {
+          cover: 'https://i.imgur.com/nicC5nh.png',
           mediaIcon: 'https://i.imgur.com/0VC2xJL.gif',
           title: 'Stranger Things',
           status: 'Descargando...'
@@ -54,6 +56,7 @@ export const LANDING_CONSTANTS_ES = {
         title: 'Disfruta donde quieras',
         description: 'Películas y series ilimitadas en tu teléfono, tablet, computadora y TV.',
         media: {
+          cover: 'https://i.imgur.com/iKM1ZNk.png',
           mediaUrl: 'https://i.imgur.com/sp1RyaY.gif'
         }
       },
@@ -63,9 +66,12 @@ export const LANDING_CONSTANTS_ES = {
       id: kidsFeature,
       content: {
         title: 'Crea perfiles para niños',
-        description: 'Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.'
+        description: 'Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.',
+        media: {
+          cover: 'https://i.imgur.com/bFnrgRX.png'
+        }
       },
-      textFirst: false
+      textFirst: false,
     }
   ],
   faqSection: {
@@ -166,6 +172,7 @@ export const LANDING_CONSTANTS_EN = {
         title: 'Enjoy on your TV',
         description: 'Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.',
         media: {
+          cover: 'https://i.imgur.com/k6uvvKS.png',
           mediaUrl: 'https://i.imgur.com/eUyUumw.gif'
         }
       },
@@ -177,6 +184,7 @@ export const LANDING_CONSTANTS_EN = {
         title: 'Download your shows to watch offline',
         description: 'Save your favorites easily and always have something to watch.',
         media: {
+          cover: 'https://i.imgur.com/nicC5nh.png',
           mediaIcon: 'https://i.imgur.com/0VC2xJL.gif',
           title: 'Stranger Things',
           status: 'Downloading...'
@@ -190,6 +198,7 @@ export const LANDING_CONSTANTS_EN = {
         title: 'Watch everywhere',
         description: 'Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.',
         media: {
+          cover: 'https://i.imgur.com/iKM1ZNk.png',
           mediaUrl: 'https://i.imgur.com/sp1RyaY.gif'
         }
       },
@@ -199,7 +208,10 @@ export const LANDING_CONSTANTS_EN = {
       id: kidsFeature,
       content: {
         title: 'Create profiles for kids',
-        description: 'Send kids on adventures with their favorite characters in space made just for them-free with your membership.'
+        description: 'Send kids on adventures with their favorite characters in space made just for them-free with your membership.',
+        media: {
+          cover: 'https://i.imgur.com/bFnrgRX.png'
+        }
       },
       textFirst: false
     }

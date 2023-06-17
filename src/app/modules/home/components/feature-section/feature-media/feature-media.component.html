@@ -1,12 +1,11 @@
 <div class="media">
-  <ng-container [ngSwitch]="moduleId">
-    <img class="media__cover on-top" *ngSwitchCase="constants.features.tvFeature" src="../../../../../../assets/images/tv.svg" alt="">
-
-    <img class="media__cover" *ngSwitchCase="constants.features.downloadFeature" src="../../../../../../assets/images/mobile.svg" alt="">
-
-    <img class="media__cover on-top" *ngSwitchCase="constants.features.multiDeviceFeature" src="../../../../../assets/images/device-pile.svg" alt="">
-
-    <img class="media__cover" *ngSwitchCase="constants.features.kidsFeature" src="../../../../../../assets/images/kids-img.svg" alt="">
+  <ng-container *ngIf="media">
+    <img
+      class="media__cover"
+      [ngClass]="{'on-top' : moduleId === constants.features.tvFeature || moduleId === constants.features.multiDeviceFeature}"
+      [src]="media.cover"
+      alt="media-cover"
+    >
   </ng-container>
 
   <ng-container *ngIf="media">
