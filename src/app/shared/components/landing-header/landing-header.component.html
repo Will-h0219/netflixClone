@@ -5,7 +5,7 @@
     <div class="header__btns">
       <app-lang-selector [languages]="languages"></app-lang-selector>
 
-      <button class="btn btn__small btn__red">{{ signIn }}</button>
+      <a class="btn btn__small btn__red" [routerLink]="[ '/browse' ]">{{ signIn }}</a>
     </div>
   </div>
 </header>
