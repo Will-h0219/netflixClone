@@ -28,7 +28,6 @@
   }
 
   h1 {
-    font-size: 2rem;
     max-width: 100%;
     margin: 0 auto 2rem;
     @include sm-screen() {
@@ -39,9 +38,5 @@
 
   .note {
     margin: 0 auto 2rem;
-    font-size: 1.125rem;
-    @include sm-screen() {
-      font-size: 26px;
-    }
   }
 }

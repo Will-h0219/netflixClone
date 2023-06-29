@@ -65,10 +65,11 @@
     .content {
       line-height: 1.5rem;
       padding: 24px;
-      font-size: inherit;
       @include sm-screen() {
         padding: 1.3vw 2vw;
-        font-size: 1.5vw;
+      }
+      @include md-screen() {
+        line-height: 2.25rem;
       }
     }
   }
