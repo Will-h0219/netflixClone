@@ -1,29 +1,42 @@
+@import '../../../../styles/medias';
 @import '../../../../styles/variables';
 
 $logo-height: 30px;
 $logo-width: 111px;
 $bg-logo-height: 40px;
 $bg-logo-width: 148px;
+$sm-logo-height: 24px;
+$sm-logo-width: 80px;
 
 .logo {
   display: block;
-  height: $logo-height;
+  height: $sm-logo-height;
   &::before {
     content: "";
     display: inline-block;
     mask: url('../../../../assets/images/logo.svg') no-repeat 50% 50%;
     -webkit-mask: url('../../../../assets/images/logo.svg') no-repeat 50% 50%;
-    mask-size: $logo-width;
-    width: $logo-width;
-    height: $logo-height;
+    mask-size: $sm-logo-width;
+    width: $sm-logo-width;
+    height: $sm-logo-height;
     background-color: $red;
   }
-  &.bg {
-    height: $bg-logo-height;
+  @include sm-screen() {
+    height: $logo-height;
     &::before {
-      mask-size: $bg-logo-width;
-      width: $bg-logo-width;
+      mask-size: $logo-width;
+      width: $logo-width;
+      height: $logo-height;
+    }
+  }
+  &.bg {
+    @include sm-screen() {
       height: $bg-logo-height;
+      &::before {
+        mask-size: $bg-logo-width;
+        width: $bg-logo-width;
+        height: $bg-logo-height;
+      }
     }
   }
 }
