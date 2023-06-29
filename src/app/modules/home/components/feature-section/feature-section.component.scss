@@ -1,3 +1,4 @@
+@import '../../../../../styles/medias';
 @import '../../../../../styles/variables';
 
 .feature {
@@ -6,33 +7,47 @@
   padding: 4.5rem 0;
   border-bottom: 8px solid $black-03;
   &__wrapper {
-    max-width: 70%;
     margin: 0 auto;
-    padding: 0 15vw;
+    padding: 0 24px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    @include sm-screen() {
+      max-width: 70%;
+      padding: 0 15vw;
+      flex-direction: row;
+    }
   }
   &__item {
-    width: 50%;
+    width: 100%;
     position: relative;
+    text-align: center;
+    @include sm-screen() {
+      text-align: inherit;
+      width: 50%;
+    }
   }
   &__text {
     h1 {
-      font-size: 2.5vw;
+      font-size: clamp(2rem, 2.5vw, 5rem);
       margin-bottom: 2rem;
     }
     p {
-      font-size: 1.3vw;
+      font-size: clamp(1.125rem, 1.3vw, 4rem);
     }
   }
 
   .text-first {
-    .feature__text { order: 1; }
-    .feature__image { order: 2; }
+    @include sm-screen() {
+      .feature__text { order: 1; }
+      .feature__image { order: 2; }
+    }
   }
 
   .image-first {
-    .feature__text { order: 2; }
-    .feature__image { order: 1; }
+    @include sm-screen() {
+      .feature__text { order: 2; }
+      .feature__image { order: 1; }
+    }
   }
 }

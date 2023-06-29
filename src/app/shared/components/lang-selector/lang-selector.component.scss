@@ -1,28 +1,61 @@
+@import '../../../../styles/medias';
 @import '../../../../styles/variables';
 
 .lang {
   position: relative;
   cursor: pointer;
   width: fit-content;
+  &__btn {
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    height: 32px;
+    padding: 6px 28px 6px 36px;
+    @include sm-screen() {
+      height: auto;
+      padding: 8px 16px;
+    }
+  }
+  &__hide {
+    display: none;
+    @include sm-screen() {
+      display: inline-block;
+    }
+  }
   &__icon {
-    margin-right: 24px;
+    margin: 0;
     &::before {
       content: "";
       display: inline-block;
       mask: url('../../../../assets/icons/world.svg') no-repeat 50% 50%;
       -webkit-mask: url('../../../../assets/icons/world.svg') no-repeat 50% 50%;
-      width: 16px;
-      height: 16px;
-      mask-size: 16px;
+      width: 20px;
+      height: 20px;
+      mask-size: 20px;
+      -webkit-mask-size: 20px;
       background-color: $light-01;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      left: 12px;
+    }
+    @include sm-screen() {
+      margin-right: 24px;
+      &::before {
+        width: 16px;
+        height: 16px;
+        mask-size: 16px;
+        -webkit-mask-size: 16px;
+        left: auto;
+      }
     }
   }
   &__select_icon {
-    margin-left: 8px;
-    margin-right: 10px;
+    margin-left: 4px;
+    @include sm-screen() {
+      margin-left: 8px;
+      margin-right: 10px;
+    }
     &::after {
       content: "";
       display: inline-block;

@@ -1,25 +1,41 @@
-.row {
+@import '../../../../../../styles/medias';
+
+.form {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  @include sm-screen() {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
 .form__group {
-  width: 25vw;
+  width: 100%;
+  @include sm-screen() {
+    width: 25vw;
+  }
 }
 
 .form__input__wrapper {
   position: relative;
+  margin-bottom: 1rem;
+  @include sm-screen() {
+    margin: 0;
+  }
   .error-msg {
-    position: absolute;
     left: 0;
+    @include sm-screen() {
+      position: absolute;
+    }
   }
 }
 
 .description {
-  font-size: 19px;
+  font-size: 1.125rem;
   margin-bottom: 2rem;
+  @include sm-screen() {
+    font-size: 19px;
+  }
 }
 
 .btn {

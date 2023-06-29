@@ -1,3 +1,4 @@
+@import './medias';
 @import './variables';
 
 .form__group {
@@ -50,8 +51,11 @@
 .form__field:focus ~ .form__label {
   color: $light-02;
   left: 16px;
-  top: 14px;
+  top: 13px;
   transform: translateY(-50%);
+  @include sm-screen() {
+    top: 14px;
+  }
 }
 
 .form__field:focus {

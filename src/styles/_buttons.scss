@@ -1,3 +1,4 @@
+@import './medias';
 @import './variables';
 
 button {
@@ -5,17 +6,24 @@ button {
 }
 
 .btn {
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: inherit;
   font-weight: 400;
   color: $black-02;
   cursor: pointer;
+  @include sm-screen() {
+    padding: 12px 24px;
+    font-size: 24px;
+  }
   &__small {
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 6px 16px;
+    @include sm-screen() {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
   }
 
   &__white {

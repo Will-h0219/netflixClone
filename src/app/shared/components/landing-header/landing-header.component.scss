@@ -1,3 +1,4 @@
+@import '../../../../styles/medias';
 @import '../../../../styles/variables';
 
 .header-wrapper {
@@ -5,15 +6,18 @@
   width: 100%;
 }
 .header {
-  max-width: 66.6%;
-  margin: 0 auto;
+  margin: 0 24px;
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include sm-screen() {
+    max-width: 66.6%;
+    margin: 0 auto;
+  }
   &__btns {
     display: flex;
-    gap: 1.2vw;
+    gap: 2vw;
     align-items: center;
     .lang {
       position: relative;

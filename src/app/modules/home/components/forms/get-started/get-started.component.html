@@ -1,6 +1,6 @@
 <p *ngIf="getStartedContent.description" class="description">{{ getStartedContent.description }}</p>
 
-<form class="row form" [formGroup]="getStartedForm" (ngSubmit)="getStarted()">
+<form class="form" [formGroup]="getStartedForm" (ngSubmit)="getStarted()">
   <div class="form__input__wrapper">
     <app-input
       class="form__group"

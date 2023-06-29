@@ -15,6 +15,7 @@ interface LangOpt {
 export class LangSelectorComponent implements OnInit {
   @Input() languages: LangOpt[] = [];
   @Input() selectedLang!: LangOpt;
+  @Input() hideLang: boolean = false;
   showLangOpts: boolean = false;
 
   constructor(private router: Router) {}
