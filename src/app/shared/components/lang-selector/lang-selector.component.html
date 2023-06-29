@@ -1,7 +1,9 @@
 <div class="lang">
-  <button class="btn btn__small btn__outline-secondary" (click)="toggleLangs()">
+  <button class="btn btn__small btn__outline-secondary lang__btn" (click)="toggleLangs()">
     <span class="lang__icon"></span>
-    {{ selectedLang.label }}
+    <span [ngClass]="{ 'lang__hide' : hideLang }">
+      {{ selectedLang.label }}
+    </span>
     <span class="lang__select_icon"></span>
   </button>
   <ul class="lang__list" *ngIf="showLangOpts">

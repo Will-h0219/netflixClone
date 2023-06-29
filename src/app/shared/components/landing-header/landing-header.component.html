@@ -3,7 +3,7 @@
     <app-logo size="bg"></app-logo>
 
     <div class="header__btns">
-      <app-lang-selector [languages]="languages"></app-lang-selector>
+      <app-lang-selector [languages]="languages" [hideLang]="true"></app-lang-selector>
 
       <a class="btn btn__small btn__red" [routerLink]="[ '/browse' ]">{{ signIn }}</a>
     </div>

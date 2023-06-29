@@ -1,3 +1,4 @@
+@import '../../../../../../styles/medias';
 @import '../../../../../../styles/variables';
 
 .collapsible {
@@ -9,8 +10,8 @@
     background-color: $gray-02;
     color: $light-01;
     border: none;
-    padding: 1.3vw 2vw;
-    font-size: 1.5vw;
+    padding: 24px;
+    font-size: inherit;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -18,6 +19,10 @@
     transition: .3s;
     &:hover {
       background-color: $mid-gray;
+    }
+    @include sm-screen() {
+      padding: 1.3vw 2vw;
+      font-size: 1.5vw;
     }
     .icon {
       display: block;
@@ -32,10 +37,16 @@
       &__plus::after {
         mask: url('../../../../../../assets/icons/plus.svg') no-repeat 50% 50%;
         -webkit-mask: url('../../../../../../assets/icons/plus.svg') no-repeat 50% 50%;
-        height: 2vw;
-        width: 2vw;
-        mask-size: 2vw;
-        -webkit-mask-size: 2vw;
+        height: 18px;
+        width: 18px;
+        mask-size: 18px;
+        -webkit-mask-size: 18px;
+        @include sm-screen() {
+          height: 2vw;
+          width: 2vw;
+          mask-size: 2vw;
+          -webkit-mask-size: 2vw;
+        }
       }
       &__close {
         @extend .icon__plus;
@@ -52,8 +63,14 @@
     overflow: hidden;
     margin-bottom: 8px;
     .content {
-      padding: 1.3vw 2vw;
-      font-size: 1.5vw;
+      line-height: 1.5rem;
+      padding: 24px;
+      @include sm-screen() {
+        padding: 1.3vw 2vw;
+      }
+      @include md-screen() {
+        line-height: 2.25rem;
+      }
     }
   }
 }

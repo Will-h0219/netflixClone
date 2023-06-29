@@ -1,18 +1,26 @@
+@import '../../../../styles/medias';
 @import '../../../../styles/variables';
 
 .footer {
   width: 100%;
   background-color: $black-01;
   &__content {
-    max-width: 70%;
-    margin: 0 auto;
+    margin: 0 24px;
     padding: 5vw 0;
+    @include sm-screen() {
+      max-width: 70%;
+      margin: 0 auto;
+    }
     &__links {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 15px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px; 
       margin-bottom: 34px;
       font-size: 14px;
+      @include sm-screen() {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
     .note {
       color: $light-02;

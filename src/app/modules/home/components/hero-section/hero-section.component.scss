@@ -1,3 +1,4 @@
+@import '../../../../../styles/medias';
 @import '../../../../../styles/variables';
 
 .get-started {
@@ -5,45 +6,37 @@
     linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.5) 100%),
     url('../../../../../assets/images/landing-background.svg');
   background-size: cover;
-  height: 70vh;
-  min-height: 700px;
+  height: 100%;
+  padding: 0 24px 3em;
   text-align: center;
   border-bottom: 8px solid $black-03;
   &::before {
     content: "";
     display: block;
-    height: 35%;
+    height: 100px;
+  }
+  @include sm-screen() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    min-height: 43rem;
+    &::before {
+      display: none;
+    }
   }
 
   h1 {
-    font-size: 54px;
-    max-width: 55vw;
+    max-width: 100%;
     margin: 0 auto 2rem;
+    @include sm-screen() {
+      font-size: 54px;
+      max-width: 55vw;
+    }
   }
 
   .note {
     margin: 0 auto 2rem;
-    &__bg {
-      font-size: 26px;
-    }
-  }
-
-  .row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .form__group {
-    width: 25vw;
-  }
-
-  .form__input__wrapper {
-    position: relative;
-    .error-msg {
-      position: absolute;
-      left: 0;
-    }
   }
 }
